@@ -23,14 +23,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-!de*9-m@4d2kh9!63qj@op9ar^&z3tf+udyy1bcb9!bfsk7$xs'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     "smart-hospitalmanagement-production.up.railway.app",
     "localhost",
     "127.0.0.1",
 ]
-
+CSRF_TRUSTED_ORIGINS = [
+    "https://smart-hospitalmanagement-production.up.railway.app",
+]
 
 # Application definition
 
